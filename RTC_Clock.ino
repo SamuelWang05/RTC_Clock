@@ -22,14 +22,13 @@ void setup() {
   // Fix date/time
   Rtc.Begin();
 
-  // Only needed once -- for intial setup, make sure to un-comment these lines
-  /**
+  // Only needed once for initial setup -- can comment out after
+  
   Serial.println("Setting up clock...");
   RtcDateTime currTime = RtcDateTime(__DATE__, __TIME__);
   Rtc.SetDateTime(currTime);
 
   delay(2000); // DHT 11 needs to stabilize
-  */
 }
 
 void loop() {
